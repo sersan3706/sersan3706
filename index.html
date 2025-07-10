@@ -12,41 +12,69 @@
       background: #f9f9f9;
       color: #333;
     }
+
     header {
       background: #222;
       color: #fff;
       padding: 2rem 0;
       text-align: center;
     }
+
     nav a {
       color: #fff;
       margin: 0 1rem;
       text-decoration: none;
+      font-weight: bold;
     }
+
     .container {
       max-width: 1000px;
       margin: auto;
       padding: 2rem;
     }
+
     section {
       margin-bottom: 4rem;
     }
+
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
     }
+
     .card {
       background: white;
       padding: 1rem;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
     }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       background: #222;
       color: #fff;
       text-align: center;
       padding: 1rem 0;
+    }
+
+    a {
+      word-break: break-word;
     }
   </style>
 </head>
@@ -66,7 +94,7 @@
 
     <section id="about">
       <h2>About Me</h2>
-      <p>Hi! I am a recent graduate in Electrical Engineering with a strong interest in automation, design, and robotics. I am skilled with my hands and I have experience in design. I am currently exploring applications in design and automation.  </p>
+      <p>Hi! I am a recent graduate in Electrical Engineering with a strong interest in automation, design, and robotics. I am skilled with my hands and have experience in design. I am currently exploring applications in design and automation.</p>
     </section>
 
     <section id="projects">
@@ -74,13 +102,15 @@
       <div class="projects">
         <div class="card">
           <h3>Modified Clock</h3>
-          <p>The clock displays the time and temperature on a LCD screen. The time can be changed from AM to PM using a push button. A potentiometer is used for brightening the screen.</p>
-           <a href="https://drive.google.com/drive/folders/1dLzDKCTrFMAebBAYPxSrOmfe7BrANmNr?usp=sharing" target="_blank">View Project</a>
+          <p>This project displays the time and temperature on an LCD screen. The time can be toggled between AM and PM using a push button, and a potentiometer adjusts screen brightness.</p>
+          <a href="https://drive.google.com/drive/folders/1dLzDKCTrFMAebBAYPxSrOmfe7BrANmNr?usp=sharing" target="_blank">View Project</a>
         </div>
+
         <div class="card">
           <h3>Project 2</h3>
           <p>Short description of your project. What does it do? What tools did you use?</p>
         </div>
+
         <div class="card">
           <h3>Project 3</h3>
           <p>Short description of your project. What does it do? What tools did you use?</p>
@@ -91,7 +121,7 @@
     <section id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:sergsan617@gmail.com">sergsan617@gmail.com</a></p>
-      <p>LinkedIn: <a href="www.linkedin.com/in/sergio-sanchez-7b62652a5" target="_blank">linkedin.com/in/sergio-sanchez-7b62652a5</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/sergio-sanchez-7b62652a5" target="_blank">linkedin.com/in/sergio-sanchez-7b62652a5</a></p>
     </section>
 
   </div>
